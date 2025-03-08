@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTM | Home</title>
+    <link rel="shortcut icon" type="x-icon" href="Media/MTM_Logo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <!-- pc view -->
+        <ul>
+            <li><img src="Media/MTM_Logo_T.png" alt="Myitta Mon Logo" width="auto" height="100%"></li>
+            <li class="hideOnMobile"><a href="#"><b>Home</b></a></li>
+            <li class="hideOnMobile"><a href="#"><b>Services</b></a></li>
+            <li class="hideOnMobile"><a href="#"><b>Appointment Booking</b></a></li>
+            <li class="hideOnMobile"><a href="#"><b>Our History</b></a></li>
+            <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <!--  -->
+        <!-- phone view -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>Services</b></a></li>
+            <li><a href="#"><b>Appointment Booking</b></a></li>
+            <li><a href="#"><b>Our History</b></a></li>
+        </ul>
+        <!--  -->
+    </nav>
+
+    <!-- JS -->
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <!--  -->
+</body>
+</html>
